@@ -1,5 +1,8 @@
 import React from 'react';
 import eva from '../img/eva.jpg'
+import pic1 from '../img/pic1.jpg'
+import sss from '../img/sss.jpg'
+import ss1 from '../img/ss1.jpg'
 import { Link } from 'react-router-dom';
 import resume from '../img/resume.pdf'
 const Home = () => {
@@ -24,7 +27,8 @@ const Home = () => {
                 <h1 className="text-2xl font-bold my-10 text-center">My Project Demo</h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                     <div className="card w-96 bg-base-100 shadow-xl">
-
+                        <figure><img src=
+                            {pic1} style={{ height: '700px', width: '100%' }} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-primary">Picaso-Painting-Brush-Manufacturer-Website</h2>
                             <h2 className="text-xl text-primary">Full stack website</h2>
@@ -44,12 +48,12 @@ const Home = () => {
                                 <br />
                                 Technology Used : React Js,Tailwind css,Daisy UI,React router dom,MongoDb,Node js,Express
                                 Js,Firebase, Heroku,stripe.js,JWT</p>
-
+                            <Link to='/project1'> <button className='btn btn-primary'>Explore more</button></Link>
                         </div>
                     </div>
                     {/* ------------ */}
                     <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure ></figure>
+                        <figure><img src={ss1} style={{ height: '700px', width: '100%' }} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-primary">Perfume-Warehouse-Website</h2>
                             <h2 className="text-xl text-primary">FullStack Website </h2>
@@ -68,12 +72,12 @@ const Home = () => {
                                 <br /><br />
                                 Technology Used : React Js,React Bootstrap,React router dom,MongoDb,Node.
                                 js,Express.Js,Firebase, Heroku,JWT</p>
-
+                            <Link to='/project2'> <button className='btn btn-primary'>Explore more</button></Link>
                         </div>
                     </div>
                     {/* ----------------------- */}
                     <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure ></figure>
+                        <figure><img src={sss} style={{ height: '700px', width: '100%' }} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-primary">Solo-Tourist-Guide,Independent service privider website</h2>
                             <h2 className="text-xl text-primary">Frontend with react,authentication system</h2>
@@ -87,6 +91,7 @@ const Home = () => {
                                 ● When user choose a service and click checkout button it will go to checkout page
                                 <br /><br />
                                 Technology used : React Js,React router dom,React Bootstrap, Css,Firebase</p>
+                            <Link to='/project3'> <button className='btn btn-primary'>Explore more</button></Link>
                         </div>
                     </div>
                 </div>
